@@ -29,7 +29,10 @@ public class TransactionServiceImpl implements TransactionService {
         validateAccount(sender,receiver);
         checkAccountOwnership(sender,receiver);
         executeBalanceAndUpdateIfRequired(amount,sender,receiver);
-
+        /*
+        after all validations completed, and money transfered, we need to create Transaction object and save/return it
+         */
+        //please create needed classes / methods for this steps, save the transactions
         return null;
     }
 
